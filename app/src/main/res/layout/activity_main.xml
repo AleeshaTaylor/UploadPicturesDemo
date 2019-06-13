@@ -76,20 +76,24 @@
                         android:textSize="16sp" />
                 </LinearLayout>
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="80dp"
-                    android:background="@drawable/shape_corner_yellow"
-                    android:layout_marginLeft="80dp">
-                    <TextView
+                    android:orientation="vertical">
+                    <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="规范"
-                        android:layout_marginLeft="10dp"
-                        android:layout_marginRight="10dp"
-                        android:layout_marginTop="1dp"
-                        android:layout_marginBottom="1dp"
-                        android:textSize="16sp" />
+                        android:layout_gravity="right"
+                        android:background="@drawable/shape_corner_yellow">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="1dp"
+                            android:text="规范"
+                            android:textSize="16sp" />
+                    </LinearLayout>
                 </LinearLayout>
             </LinearLayout>
 
@@ -390,7 +394,7 @@
             android:layout_margin="16dp"
             android:orientation="vertical">
             <LinearLayout
-                android:id="@+id/btn_submit"
+                android:id="@+id/ll_submit"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:gravity="center|center_horizontal|center_vertical"
@@ -423,7 +427,7 @@
                 </LinearLayout>
             </LinearLayout>
             <Button
-                android:id="@+id/btn_finish"
+                android:id="@+id/btn_abandon"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:layout_marginTop="20dp"
